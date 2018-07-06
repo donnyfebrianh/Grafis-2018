@@ -110,9 +110,35 @@ public class Piston implements GLEventListener {
 //        Part.pistonStem(gl);
         gl.glTranslatef(0.0f, -8.0f, 0.0f);
         Part.pistonStem(gl);
-        // Done Drawing The Quad
-
-        // Flush all drawing operations to the graphics card
+        Part.sirip(gl);
+        gl.glPushMatrix();
+        gl.glTranslatef(1f, 3f, 0.0f);
+        Part.sirip_banyak(gl);
+        gl.glPopMatrix();
+        gl.glTranslatef(0.0f, 0.0f, 0.0f);
+        Part.balok(gl);
+        gl.glPushMatrix();
+        gl.glTranslatef(0.0f, 0.0f, 0.0f);
+        Part.balok_tambahan_atas(gl);
+        gl.glPopMatrix();
+        gl.glTranslatef(0.0f, 0.0f, 0.0f);
+        Part.body_bandul(gl);
+        gl.glPushMatrix();
+        gl.glTranslatef(0.0f, 0.0f, 0.0f);
+        Part.sambungan_bandul(gl);
+        gl.glPopMatrix();
+        gl.glTranslatef(0.0f, 0.0f, 0.0f);
+        Part.sisi_samping_sambungan_bandul(gl);
+        gl.glPushMatrix();
+        gl.glTranslatef(0.0f, 0.0f, 0.0f);
+        Part.bandul(gl);
+        gl.glPopMatrix();
+        gl.glTranslatef(0.0f, 0.0f, 0.0f);
+        Part.ring(gl);
+        gl.glPushMatrix();
+        gl.glTranslatef(0.0f, 0.0f, 0.0f);
+        Part.bandul(gl);
+        gl.glPopMatrix();
         gl.glFlush();
     }
 
